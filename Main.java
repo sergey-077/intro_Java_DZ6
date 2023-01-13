@@ -1,6 +1,6 @@
 package files;
 
-//import java.util.Arrays;
+import java.util.Arrays;
 
 /**
  * Определить класс Reader, хранящий такую информацию о пользователе библиотеки:
@@ -36,12 +36,15 @@ public class Main {
         Books books4 = new Books("Словарь", "Изд. <Наука>");
         Books books5 = new Books("Приключения Буратино", "Алексей Толстой");
 
-        Reader student1 = new Reader("Иванов И. И.", 0102, "Математика", "10.12.2003", "89001234567\n");
-        Reader student2 = new Reader("Петров В. В.", 0125, "Радиотехника", "07.05.2005", "89162234455\n");
-        Reader student3 = new Reader("Сидоров С. С.", 0101, "Станкостроение", "25.07.2004", "89032223355\n");
+        Reader student1 = new Reader("Иванов И. И.", 102, "Математика", "10.12.2003", "89001234567\n");
+        Reader student2 = new Reader("Петров В. В.", 125, "Радиотехника", "07.05.2005", "89162234455\n");
+        Reader student3 = new Reader("Сидоров С. С.", 101, "Станкостроение", "25.07.2004", "89032223355\n");
 
         Reader[] students = new Reader[] { student1, student2, student3 };
         Books[] books = new Books[] { books1, books2, books3, books4, books5 };
+
+        System.out.println(Arrays.toString(students));
+        System.out.println(Arrays.toString(books));
 
         student1.takeBooks(books1);
         student2.takeBooks(3);
