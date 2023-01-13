@@ -43,9 +43,6 @@ public class Main {
         Reader[] students = new Reader[] { student1, student2, student3 };
         Books[] books = new Books[] { books1, books2, books3, books4, books5 };
 
-        // System.out.println(Arrays.toString(students));
-        // System.out.println(Arrays.toString(books));
-
         student1.takeBooks(books1);
         student2.takeBooks(books3.getBookName(), books4.getBookName(), books5.getBookName());
         student3.takeBooks(books2.getBookWriter());
