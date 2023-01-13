@@ -44,6 +44,7 @@ public class Main {
         Books[] books = new Books[] { books1, books2, books3, books4, books5 };
 
         student1.takeBooks(books1);
+        student2.takeBooks(3);
         student2.takeBooks(books3.getBookName(), books4.getBookName(), books5.getBookName());
         student3.takeBooks(books2.getBookWriter());
 
